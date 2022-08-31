@@ -8,7 +8,7 @@ export default function fetchCountries(name) {
             if(res.status === 404) {
         return Promise.reject(new Error());
         }
-            res.json()
+            return res.json()
         })
             .catch(error => console.log(error))
 }
